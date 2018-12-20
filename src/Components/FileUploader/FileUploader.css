@@ -1,0 +1,125 @@
+.FileUploader {
+  text-align: center;
+  max-width: 300px;
+  width: 300px;
+}
+
+.FileUploader__logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.FileUploader__header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.FileUploader__title {
+  font-size: 18px;
+}
+
+.FileUploader__title span {
+  color: gray;
+  max-width: 100%;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.FileUploader__casenumber {
+  margin-bottom: 40px;
+}
+
+.FileUploader__selectbutton {
+  border: 1px solid #3b516b;
+  border-radius: 13px;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.FileUploader__selectbutton-hidden {
+  display: none;
+}
+
+.FileUploader__selectbutton span {
+  color: #9eafc3;
+  font-size: 14px;
+  position: relative;
+  bottom: 5px;
+  margin-left: 10px;
+}
+
+.FileUploader__progressbar {
+
+}
+
+.FileUploader__progressbar-hidden {
+  display: none;
+}
+
+.FileUploader__title p {
+  color: white;
+  font-size: 12px;
+}
+
+.FileUploader__title-hidden {
+  display: none;
+}
+
+.FileUploader__intro {
+  font-size: large;
+}
+
+.FileUploader__submitbutton-hidden {
+  display: none;
+}
+.FileUploader__submitbutton {
+  background: #3D94F6;
+  background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+  background-image: linear-gradient(to bottom, #3D94F6, #1E62D0);
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: "Open Sans", Verdana, Arial;
+  font-size: 18px;
+  font-weight: 100;
+  box-shadow: 1px 1px 20px 0px #000000;
+  -webkit-box-shadow: 1px 1px 20px 0px #000000;
+  -moz-box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337FED 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.FileUploader__submitbutton:hover {
+	background: #1E62D0;
+	background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+	background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+	background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+	background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+	background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+	text-decoration: none;
+}
+
+.FileUploader__uploadmessage {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.FileUploader__uploadmessage-hidden {
+  display: none;
+}
+
+@keyframes FileUploader__logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.react-sweet-progress-symbol {
+  color: white !important;
+}
