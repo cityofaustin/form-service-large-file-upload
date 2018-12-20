@@ -23,6 +23,13 @@ The app has been tested uploading a 1gb file on Wifi, it took about 15-20 minute
 
 ![Screen_Shot_2018-12-20_at_2_44_14_AM.png](https://images.zenhubusercontent.com/5b7edad7290aac725aec290c/97d2ae24-dca4-4d80-8d03-2799b96cb4ae)
 
+On a mac, you can create a large dummy file using the following command:
+
+`mkfile -n 1g ~/Desktop/testfile.mp4`
+
+The file will be empty, however you can adjust multiple file sizes: 2-3gb, etc.
+
+
 ## Running the app
 
 You can run the app using yarn start or npm start.
