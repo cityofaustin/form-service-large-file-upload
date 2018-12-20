@@ -1,44 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a large file uploader proof of concept, for considerations on how it works you can look at the architecture section. For a demonstration you can visit the links below.
 
-## Available Scripts
+The code is basically a component named `FileUploader` in the `src/Components` folder.
 
-In the project directory, you can run:
+Front-end is written in react:
+https://d1tox4tz6kpvtt.cloudfront.net/fileuploads.html?case=C3D-123-9876
 
-### `npm start`
+Where the case number has to follow that format:
+[3 digit uppercase alphanumeric]-[3 digit numeric]-[4 digit numeric]
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+At the moment you can write any code you want without any restrictions; however, the backend is coded to be strict to be strict in the case number format.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Architecture
 
-### `npm test`
+1. The app will request an authorization (signature) token from the API.
+2. The API will request and generate the token from S3, and return it to the front-end. The API will have a preset file name it will expect.
+3. The the file name is sent back to the front end, along with the required authorization tokens.
+4. The front end will compile a request, add the tokens in the headers and upload the file to s3.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Testing
 
-### `npm run build`
+The app has been tested uploading a 1gb file on Wifi, it took about 15-20 minutes:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screen_Shot_2018-12-20_at_2_44_14_AM.png](https://images.zenhubusercontent.com/5b7edad7290aac725aec290c/97d2ae24-dca4-4d80-8d03-2799b96cb4ae)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Running the app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can run the app using yarn start or npm start.
