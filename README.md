@@ -1,9 +1,7 @@
 This is a large file uploader proof of concept, for considerations on how it works you can look at the architecture section. For a demonstration you can visit the links below.
 
-The code is basically a component named `FileUploader` in the `src/Components` folder.
-
 Front-end is written in react:
-https://d1tox4tz6kpvtt.cloudfront.net/fileuploads.html?case=C3D-123-9876
+https://d1tox4tz6kpvtt.cloudfront.net/fileupload.html?case=C3D-123-9876
 
 Where the case number has to follow that format:
 [3 digit uppercase alphanumeric]-[3 digit numeric]-[4 digit numeric]
@@ -21,7 +19,7 @@ At the moment you can write any code you want without any restrictions; however,
 
 The app has been tested uploading a 1gb file on Wifi, it took about 15-20 minutes:
 
-![Screen_Shot_2018-12-20_at_2_44_14_AM.png](https://images.zenhubusercontent.com/5b7edad7290aac725aec290c/97d2ae24-dca4-4d80-8d03-2799b96cb4ae)
+![Screen_Shot_2018-12-21_at_1_58_42_AM.png](https://images.zenhubusercontent.com/5b7edad7290aac725aec290c/f74f89e1-39f6-4baa-ad46-a941d8cd38a8)
 
 On a mac, you can create a large dummy file using the following command:
 

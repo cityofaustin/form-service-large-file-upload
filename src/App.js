@@ -10,8 +10,8 @@ import './App.css';
 import { FilePond, File, registerPlugin } from 'react-filepond';
 import 'filepond/dist/filepond.min.css';
 
-// const endpoint = 'https://6jm8rnjkxf.execute-api.us-east-1.amazonaws.com/staging';
-const endpoint = 'http://127.0.0.1:5000';
+const endpoint = 'https://6jm8rnjkxf.execute-api.us-east-1.amazonaws.com/staging';
+// const endpoint = 'http://127.0.0.1:5000';
 
 // File size limit: 2gb (https://whatsabyte.com/P1/byteconverter.htm)
 const fileSizeLimit = 2147483648;
