@@ -22,6 +22,11 @@
   color: #61dafb;
 }
 
+.filepond--root {
+    width: 80vw;
+    margin-top: 8vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

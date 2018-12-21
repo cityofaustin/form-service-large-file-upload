@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "filepond": "^3.6.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-filepond": "^5.0.0",
     "react-query-params": "^1.0.9",
     "react-scripts": "2.1.1",
     "react-sweet-progress": "^1.1.2"
