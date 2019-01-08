@@ -1,4 +1,4 @@
-This is a large file uploader proof of concept, for considerations on how it works you can look at the architecture section. For a demonstration you can visit the links below.
+This is a large file uploader for the [Form Service API](https://github.com/cityofaustin/form-service-api), for considerations on how it works you can look at the architecture section. For a demonstration you can visit the links below.
 
 Front-end is written in react:
 https://d1tox4tz6kpvtt.cloudfront.net/fileupload.html?case=C3D-123-9876
